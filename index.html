@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn JAVA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			
+	<nav>
+		<label class="logo">CODEGENE</label>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="#">COURSES</a>
+				<ul>
+					<li><a href="c.html">ANSI C</a></li>
+					<li><a href="c++.html">C++</a></li>
+					<li><a href="java.html">JAVA</a></li>
+				</ul>
+			<li><a href="aboutus.html">ABOUT</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+		
+	</nav>
+	</div>
+	</header>
+	<h2 class="tryhead1">What is Java?</h2>
+	<p class="trypara">
+		<pre>
+Java is a popular programming language, created in 1995.
+
+It is owned by Oracle, and more than 3 billion devices run Java.
+
+It is used for:
+<ul>
+<li>Mobile applications (specially Android apps)</li>
+<li>Desktop applications</li>
+<li>Web applications</li>
+<li>Web servers and application servers</li>
+<li>Games</li>
+<li>Database connection</li>
+<li>And much, much more!</li>
+</ul>
+</pre>
+</p>
+<h2 class="tryhead1">Why Use Java?</h2>
+<p class="trypara">
+	<pre>
+		<ul>
+<li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+<li>It is one of the most popular programming language in the world</li>
+<li>It is easy to learn and simple to use</li>
+<li>It is open-source and free</li>
+<li>It is secure, fast and powerful</li>
+<li>It has a huge community support (tens of millions of developers)</li>
+<li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
+</ul>
+</pre>
+	</p>
+	<h2 class="tryhead1">Java Install</h2>
+	<p class="trypara">
+		<pre>
+Some PCs might have Java already installed.
+
+To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):
+<div class="trycode">
+C:\Users\Your Name>java -version
+</div>
+If Java is installed, you will see something like this (depending on version):
+<div class="trycode">
+java version "11.0.1" 2018-10-16 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+</div>
+If you do not have Java installed on your computer, you can download it for free from <a href="oracle.com">oracle.com</a>.
+
+Note: In this tutorial, we will write Java code in a text editor. However, it is possible to write Java in an Integrated Development Environment, such as IntelliJ IDEA, Netbeans or Eclipse, which are particularly useful when managing larger collections of Java files.</pre>
+	</p>
+	<h2 class="tryhead1">Objects and Classes</h2>
+<p class="trypara">Objects are the basic runtime entities in an object-oriented system. They may represent a person, a place, a bank account, a table of data, or any item that the program may handle.They may also represent user-defined data types such as vectors and lists. Any programming problem is analyzed in terms of objects and the nature of communication between them. Program objects should be chosen such that they match closely with the real-world objects. As pointed out earlier, an object takes up space in the memory and has an associated address like a record in Pascal, or a structure in C.</p>
+<p class="trypara">When a program is executed, the objects interact by sending messages to one another. For example, 'customer' and 'account' are two objects in a banking program, then the customer object may send a message to the account object requesting for the balance. Each object contains data and code to manipulate the sata. Objects can interact without having to know the details of each other's data or code. It is sufficient to know the type of message by the object. Although different authors represent them differently.</p>
+<p class="trypara">We just mentioned that objects contain data and code to manipulate that data. The entire set of data and code of an object can be made a user-defined data type using the concept of a <i>class</i>. A class may be thought of as a 'data type' and an object as a 'variable' of that data type. Once a class has been defined, we can create any number of objects belonging to that class. Each object is associated with the data of type class with which they are created. </p>
+<h2 class="tryhead1">Java Quickstart</h2>
+<p class="trypara">
+	<pre>
+In Java, every application begins with a class name, and that class must match the filename.
+
+Let's create our first Java file, called MyClass.java, which can be done in any text editor (like Notepad).
+
+The file should contain a "Hello World" message, which is written with the following code:
+
+MyClass.java
+<div class="trycode"> 
+public class MyClass {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+</div>
+Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code above.
+
+Save the code in Notepad as "MyClass.java". Open Command Prompt (cmd.exe), navigate to the directory where you saved your file, and type "javac MyClass.java":
+
+<div class="trycode"> C:\Users\Your Name>javac MyClass.java</div>
+This will compile your code. If there are no errors in the code, the command prompt will take you to the next line. Now, type "java MyClass" to run the file:
+
+<div class="trycode">C:\Users\Your Name>java MyClass</div>
+The output should read:
+
+<div class="trycode">Hello World</div>
+Congratulations! You have written and executed your first Java program.</pre>
+</p>
+<h2 class="tryhead1">Java Syntax</h2>
+<p class="trypara"><pre>
+In the previous chapter, we created a Java file called MyClass.java, and we used the following code to print "Hello World" to the screen:
+
+MyClass.java
+<div class="trycode">
+public class MyClass {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+</div></pre>
+</p>
+<h3 class="tryhead1">Example explained</h3>
+<p class="trypara"><pre>Every line of code that runs in Java must be inside a class. In our example, we named the class MyClass. A class should always start with an uppercase first letter.
+
+Note: Java is case-sensitive: "MyClass" and "myclass" has different meaning.
+
+The name of the java file must match the class name. When saving the file, save it using the class name and add ".java" to the end of the filename. To run the example above on your computer, make sure that Java is properly installed: Go to the Get Started Chapter for how to install Java. The output should be:
+
+<div class="trycode">Hello World</div></pre>
+</p>
+<h3 class="tryhead1">The main Method</h3>
+<p class="trypara"><pre>The main() method is required and you will see it in every Java program:
+
+<div class="trycode">public static void main(String[] args)</div>
+Any code inside the main() method will be executed. You don't have to understand the keywords before and after main. You will get to know them bit by bit while reading this tutorial.
+
+For now, just remember that every Java program has a class name which must match the filename, and that every program must contain the main() method.
+
+System.out.println()
+Inside the main() method, we can use the println() method to print a line of text to the screen:
+<div class="trycode">
+public static void main(String[] args) {
+  System.out.println("Hello World");
+}
+</div>
+<b>Note: The curly braces {} marks the beginning and the end of a block of code.</b>
+
+<b>Note: Each code statement must end with a semicolon.</b></pre>
+</p>
+</body>
+</html>
